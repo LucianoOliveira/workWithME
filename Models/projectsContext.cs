@@ -17,6 +17,12 @@ namespace workWithME.Models
         {
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<projectsContext, Migrations.Configuration>());
+        }
+
         public DbSet<projects> projects { get; set; }
     }
 }
