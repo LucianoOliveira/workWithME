@@ -1,0 +1,53 @@
+﻿<h2>{{action}} Project</h2>
+<form name="form" class="form-horizontal">
+    <div class="form-group" ng-class="{error: form.project.$invalid}">
+        <label for="project" class="col-sm-1 control-label">Project</label>
+        <div class="col-sm-3">
+            <input type="text" ng-model="item.project"  class="form-control" id="project" name="project" placeholder="">
+        </div>
+    </div>
+    <div class="form-group" ng-class="{error: form.priority.$invalid}">
+        <label class="col-sm-1 control-label" for="priority">Priority</label>
+        <div class="col-sm-3">
+            <input type="text" ng-model="item.priority" class="form-control" id="priority" name="priority" placeholder="">
+        </div>
+    </div>
+    <div class="form-group" ng-class="{error: form.client.$invalid}">
+        <label class="col-sm-1 control-label" for="client">Client</label>
+        <div class="col-sm-3">
+            <input type="text" ng-model="item.client" class="form-control" id="client" name="client" placeholder="">
+        </div>
+    </div>
+    <div class="form-group" ng-class="{error: form.location.$invalid}">
+        <label class="col-sm-1 control-label" for="location">Location</label>
+        <div class="col-sm-3">
+            <input type="text" ng-model="item.location" class="form-control" id="location" name="location" placeholder="">
+        </div>
+    </div>
+    <div class="form-group" ng-class="{error: form.description.$invalid}">
+        <label class="col-sm-1 control-label" for="description">Description</label>
+        <div class="col-sm-3">
+            <input type="text" ng-model="item.description" class="form-control" id="description" name="description" placeholder="">
+        </div>
+    </div>
+    <div class="form-group" ng-class="{error: form.numVacancies.$invalid}">
+        <label class="col-sm-1 control-label" for="numVacancies">Number Vacancies</label>
+        <div class="col-sm-3">
+            <input type="number" ng-model="item.numVacancies" class="form-control" id="numVacancies" name="numVacancies" placeholder="">
+        </div>
+    </div>
+    <div class="form-group" ng-class="{error: form.dueDate.$invalid}">
+        <label class="col-sm-1 control-label" for="dueDate">Due Date</label>
+        <div class="col-sm-3">
+            <input type="date" ng-model="item.dueDate" value="{{item.dueDate | date: 'yyyy-MM-dd'}}" id="dueDate" class="form-control" name="dueDate" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-3">
+            <button ng-click="save()" type="submit" class="btn btn-primary">{{action}}</button>
+            <a href="#/" class="btn btn-default">Cancel</a>
+        </div>
+    </div>
+
+</form>
