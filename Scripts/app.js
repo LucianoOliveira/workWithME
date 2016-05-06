@@ -55,7 +55,7 @@ var ListCtrl = function ($scope, $location, Projects) {
         }
         else {
             $scope.sort_order = col;
-            $scope.is_desc = true;
+            $scope.is_desc = false;
         }
         
         $scope.reset();
@@ -86,8 +86,8 @@ var ListCtrl = function ($scope, $location, Projects) {
         });
     };
 
-    $scope.sort_order = "priority";
-    $scope.is_desc = true;
+    $scope.sort_order = "project";
+    $scope.is_desc = false;
 
     $scope.reset();
 };
