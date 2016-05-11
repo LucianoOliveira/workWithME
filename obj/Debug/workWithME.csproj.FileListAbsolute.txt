@@ -31,4 +31,3 @@ C:\Users\Luciano\documents\visual studio 2012\Projects\workWithME\obj\Debug\work
 C:\Users\Luciano\documents\visual studio 2012\Projects\workWithME\obj\Debug\workWithME.csproj.GenerateResource.Cache
 C:\Users\Luciano\documents\visual studio 2012\Projects\workWithME\obj\Debug\workWithME.dll
 C:\Users\Luciano\documents\visual studio 2012\Projects\workWithME\obj\Debug\workWithME.pdb
-C:\Users\Luciano\documents\visual studio 2012\Projects\workWithME\obj\Debug\workWithME.csprojResolveAssemblyReference.cache

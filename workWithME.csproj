@@ -122,8 +122,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CandidatesController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\LocationsController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -132,6 +134,9 @@
       <DependentUpon>201605021503202_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\candidate.cs" />
+    <Compile Include="Models\clients.cs" />
+    <Compile Include="Models\locations.cs" />
     <Compile Include="Models\projects.cs" />
     <Compile Include="Models\projectsContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

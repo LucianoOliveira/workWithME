@@ -15,8 +15,10 @@ namespace workWithME.Models
 
         public projectsContext() : base("name=projectsContext")
         {
+            //Database.SetInitializer<projectsContext>(null);
         }
-
+        
+        //Comment this if it is needed to create new controller using this context
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer(
@@ -24,5 +26,11 @@ namespace workWithME.Models
         }
 
         public DbSet<projects> projects { get; set; }
+
+        public DbSet<candidate> candidates { get; set; }
+
+        public DbSet<clients> clients { get; set; }
+
+        public DbSet<locations> locations { get; set; }
     }
 }

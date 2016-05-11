@@ -10,6 +10,7 @@
         <label class="col-sm-1 control-label" for="priority">Priority</label>
         <div class="col-sm-3">
             <input type="text" ng-model="item.priority" class="form-control" id="priority" name="priority" placeholder="">
+            <select class="form-control" ng-model="placement.selected" ng-options="o as o for o in placement.options"></select>
         </div>
     </div>
     <div class="form-group" ng-class="{error: form.client.$invalid}">
